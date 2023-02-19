@@ -5,10 +5,9 @@ import prisma from '../../../prisma/index'
 
 // Logowanie
 export const AuthOptions = {
-    session: {
-        jwt: true,
-    },
     adapter: PrismaAdapter(prisma),
+    secret: process.env.NEXTAUTH_SECRET,
+    
     // Configure one or more authentication providers
     providers: [
         //  Google provider
@@ -19,6 +18,5 @@ export const AuthOptions = {
         }),
         
     ],
-    secret: process.env.NEXTAUTH_SECRET,
 };
 export default NextAuth(AuthOptions);
