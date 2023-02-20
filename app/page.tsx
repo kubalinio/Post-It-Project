@@ -1,6 +1,6 @@
 'use client'
 
-import { AddPost } from './components/AddPost'
+import AddPost from './components/AddPost'
 
 export default function Home() {
   return (
