@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Post = ({ avatar, name, postTitle, id }) => {
+const Post = ({ avatar, name, postTitle, id, comments }) => {
     return (
         <div className="p-8 my-8 bg-white rounded-lg">
             <div className="flex items-center gap-2">
@@ -23,7 +23,7 @@ const Post = ({ avatar, name, postTitle, id }) => {
             <div className="flex items-center gap-4 cursor-pointer">
                 <Link href={`/post/${id}`}>
                     <p className="text-sm font-bold text-gray-700">
-                        Comments
+                        {comments?.length} Comments
                     </p>
                 </Link>
             </div>
