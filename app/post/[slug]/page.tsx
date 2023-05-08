@@ -27,6 +27,7 @@ const PostDetail = (url: URL) => {
     })
     if (isLoading) return <div>Loading...</div>
 
+    console.log(data)
 
     return (
         <div>
@@ -51,7 +52,7 @@ const PostDetail = (url: URL) => {
                         <h2 className='text-sm'>{comment.createdAt}</h2>
                     </div>
                     <div className='py-4'>
-                        {comment.title}
+                        {comment.message}
                     </div>
                 </div>
             ))}
