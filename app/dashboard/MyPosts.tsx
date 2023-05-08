@@ -18,7 +18,6 @@ export const MyPosts = () => {
 
     if (isLoading) return <h1>Posts are loading...</h1>;
 
-    console.log(data)
 
     return (
         <div>

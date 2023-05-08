@@ -27,7 +27,9 @@ const EditPost = ({ avatar, name, title, comments, id }: EditProps) => {
 
     // Delete Post
     const { mutate } = useMutation(
-        async (id: string) => await axios.delete('/api/posts/deletePost', { data: id }),
+        async (id: string) => await axios.post('/api/posts/deletePost', {
+            postId: id
+        }),
         {
             onError: (error) => {
                 console.log(error)

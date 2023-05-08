@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Amazon Web Scraper"
+		},
+		{
+			"path": "../../Amazon Project"
+		},
+		{
+			"path": "../../Allegro Dark Project"
+		},
+		{
+			"path": "../../chatgpt-messenger-clone"
+		},
+		{
+			"path": "../../portfolio-2.0"
+		},
+		{
+			"path": "../../Spotify Project"
+		},
+		{
+			"path": "../../Portfolio Project"
+		},
+		{
+			"path": "../../Ecommers Project"
+		},
+		{
+			"path": "../../../React Components"
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules\\typescript\\lib",
+		"typescript.enablePromptUseWorkspaceTsdk": true
+	}
+}
